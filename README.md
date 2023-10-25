@@ -1,2 +1,2 @@
 # employee-biography
-Employee Biography Plugin work with ACF Field plugin
+Employee Biography WP Plugin work with ACF Field plugin
