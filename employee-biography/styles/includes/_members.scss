@@ -1,0 +1,62 @@
+.employee-blocks{
+	display: grid;
+	gap: 50px;
+	width: 100%;
+	&.col-1{
+		grid-template-columns: 1fr;
+	}
+	&.col-2{
+		grid-template-columns: 1fr 1fr;
+	}
+	&.col-3{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	@media only screen and (max-width:991px){
+		&.col-3{
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	@media only screen and (max-width:600px){
+		gap: 30px;
+		grid-template-columns: 1fr;
+	}
+	.employee-bio{
+		background-color: $light_grey;
+		border: solid 2px $border_color;
+	    box-shadow: 0px 0px 30px 5px $border_color;
+		.employee-thumbnail{
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+		.emloyee-details{
+			padding: 20px;
+			.employee-name{
+				font-size: 28px;
+				line-height: 28px;
+				font-weight: 600;
+				margin: 0 0 20px;
+				display: block;
+			}
+			strong{
+				padding-right: 10px;
+			}
+			span,p{
+				display: block;
+				font-size: 16px;
+				line-height: 22px;
+			}
+			p{
+				margin: 0 0 10px;
+			}
+			.employee-division-logo{
+				margin: 20px 0 10px;
+				img{
+					max-width: 100px;
+					height: auto;
+				}
+			}
+		}
+	}
+}
